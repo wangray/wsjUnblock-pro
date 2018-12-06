@@ -7,6 +7,14 @@
   "icons": {
     "48": "icons/eric_cartman.png"
   },
+  "content_scripts": [
+   {
+    "matches": ["*://*.theinformation.com/*"],
+    "exclude_globs": ["*://*.theinformation.com/*unlock*", "*://*.theinformation.com/*share*",  "https://www.theinformation.com/"],
+    "run_at": "document_idle",
+    "js": ["src/bypass.js"]
+   }
+ ],
   "background": {
     "scripts": [
       "src/bg/background.js"
@@ -16,6 +24,8 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
+    "tabs",
+    "activeTab",
     "https://*.wsj.com/*",
     "http://*.wsj.com/*",
     "https://*.wsj.net/*",
@@ -24,6 +34,12 @@
     "https://*.nytimes.com/*",
     "http://*.nytimes.com/*",
     "https://*.nyt.com/*",
-    "http://*.nyt.com/*"
+    "http://*.nyt.com/*",
+    "https://*.washingtonpost.com/*",
+    "http://*.washingtonpost.com/*",
+    "https://*.theinformation.com/*",
+    "http://*.theinformation.com/*",
+    "https://*.bostonglobe.com/*",
+    "http://*.bostonglobe.com/*"
   ]
 }

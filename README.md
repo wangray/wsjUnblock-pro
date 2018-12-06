@@ -1,7 +1,25 @@
 
 ## Make WSJ & NYTimes Great Again:
 
-#### Get around the paywall for many Wall Street Journal, New York Times and Financial Times content
+#### Get around the paywall for Boston Globe, Wall Street Journal, New York Times, Washington Post and Financial Times content
+
+## Install Instructions
+*   click "clone or download", download zip. The downloaded file is an unpacked chrome extension, unzip it into a directory.
+*   Visit `chrome://extensions` (via omnibox or menu -> Tools -> Extensions).
+*   Enable Developer mode by ticking the checkbox in the upper-right corner.
+*   Click on the "Load unpacked extension..." button.
+*   Select the directory containing your *unpacked* extension.
+*   Reference: [How to install an unpacked chrome extension](http://stackoverflow.com/questions/24577024/install-chrome-extension-not-in-the-store/24577660#24577660)
+
+## Updates
+
+### Update by wangray in June 2018:
+*  **Fact**: NYTimes, Boston Globe, and WaPo pop up subscription window and block content view after reaching free article limit, using requests to paywall service endpoints
+
+*  **Idea**:  Block requests to pwapi.washingtonpost.com, meter.bostonglobe.com, and meter-svc.nytimes.com
+
+* **Fact**: fortenforge sux
+
 
 ### Update in Apr 2017:
 *	**Fact**: WSJ has an advertisement popping up *every single time* we read an article, too much!
@@ -35,15 +53,6 @@
 
 #### Interested in development process?
 *	I wrote a blog [How to bypass WSJ and NYTimes paywalls?](http://blog.jinsongli.com/) about the details on my website.
-
-
-### Install Instructions
-*	click "clone or download", download zip. The downloaded file is an unpacked chrome extension, unzip it into a directory.
-*	Visit `chrome://extensions` (via omnibox or menu -> Tools -> Extensions).
-*	Enable Developer mode by ticking the checkbox in the upper-right corner.
-*	Click on the "Load unpacked extension..." button.
-*	Select the directory containing your *unpacked* extension.
-*	Reference: [How to install an unpacked chrome extension](http://stackoverflow.com/questions/24577024/install-chrome-extension-not-in-the-store/24577660#24577660)
 
 
 ### License
